@@ -1,11 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Button, buttonVariants } from '@/components/ui/button';
 import '@/styles/globals.css';
+import AboutMe from "@/components/ui/aboutMe"
+import Projects from "@/components/ui/projects"
+import { Separator } from '@/components/ui/separator'
+import Pathway from '@/components/ui/pathway/pathway'
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-	  <Button variant="outline" size="lg">Hello World</Button>
-  </main>
+<Layout title="Manuel portfolio website">
+  <div class="px-8">
+    <main>
+      <AboutMe client:load={true} />
+      <Separator className='my-2' />
+      <Pathway client:only />
+      <Separator className='my-2' />
+      <!-- <Projects /> -->
+    </main>
+  </div>
 </Layout>
