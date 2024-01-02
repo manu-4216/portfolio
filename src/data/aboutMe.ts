@@ -1,6 +1,6 @@
 const aboutMe = {
   name: "Manuel Micu",
-  shortDescription: "Full-stack developer with Senior Front-end expertise",
+  shortDescription: "Senior Front-end | Full-stack developer",
   statusPhrase: "Looking for a new exciting opportunity. Well rounded skills, strong contributor, and team player",
   location: "London | Remote",
   links: {

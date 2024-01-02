@@ -1,9 +1,11 @@
 import React from 'react'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import aboutMe from '@/data/aboutMe'
+import { Badge } from '@/components/ui/badge'
+import Tags from '@/components/ui/tags'
 import { GithubIcon, LinkedinIcon, PencilIcon } from 'lucide-react'
 
-const { location, shortDescription, links} = aboutMe
+const { location, links} = aboutMe
 
 const Link = (props: any) => {
   const { url, icon } = props
@@ -20,16 +22,20 @@ const Link = (props: any) => {
   )
 }
 
-const AboutMe = () => {
+const Header = () => {
   return (
     <header className='mb-4'>
       <h1 className='flex items-center wrap my-4 flex-row'>
-        <div className="w-[calc(50%-2rem)] min-w-[200px]">
+        <div className="w-[calc(50%-2rem)] min-w-[130px]">
           <div className='text-2xl leading-none mb-2'>
             Manuel Micu
           </div>
-          <div className='bold text-sm text-red-400 leading-1'>
-            {shortDescription}
+          <div className='bold text-sm text-slate-900 leading-1'>
+            <Badge className='rounded-sm'>Senior Front-end</Badge> | {' '}
+            <Badge className='rounded-sm'>Full-stack</Badge>
+          </div>
+          <div className='text-sm text-slate-800  mt-2'>
+            Software developer with frontend expertise in: <Tags variant='outline' tags={['React', 'TypeScript', 'node.js']} />
           </div>
         </div>
 
@@ -42,9 +48,9 @@ const AboutMe = () => {
             {location}
           </div>
           <div className='text-slate-900 leading-2 text-sm'>
-            <Link url={links.github} icon={<GithubIcon size={16} />}></Link>
-            <Link url={links.linkedIn} icon={<LinkedinIcon size={16} />}></Link>
-            <Link url={links.dev} icon={<PencilIcon size={16} />}></Link>
+            <Link url={links.github} icon={<GithubIcon size={15} strokeWidth={2} />}></Link>
+            <Link url={links.linkedIn} icon={<LinkedinIcon size={15} strokeWidth={2} />}></Link>
+            <Link url={links.dev} icon={<PencilIcon size={15} strokeWidth={2} />}></Link>
           </div>
         </div>
       </h1>
@@ -52,4 +58,4 @@ const AboutMe = () => {
   )
 }
 
-export default AboutMe
+export default Header

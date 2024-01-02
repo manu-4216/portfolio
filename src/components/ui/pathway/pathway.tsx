@@ -67,8 +67,9 @@ const Pathway = () => {
 
         <defs>
           <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%"   stopColor="#23b2a2"/>
-            <stop offset="100%" stopColor="#785fc8"/>
+            <stop offset="0%"   stopColor="#f87171"/>
+            <stop offset="60%"  stopColor="#16a34a"/>
+            <stop offset="100%" stopColor="#3b82f6"/>
           </linearGradient>
         </defs>
       </svg>

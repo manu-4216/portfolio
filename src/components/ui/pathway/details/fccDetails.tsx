@@ -1,5 +1,6 @@
 import React from 'react'
 import { type Step } from '@/data/pathwaySteps'
+import Link from '@/components/ui/link'
 
 type Props = {
   step: Step
@@ -7,13 +8,25 @@ type Props = {
 const FccDetails = (props: Props) => {
   return (
     <>  
-      <p>FreeCodeCamp is the biggest online community for learning web development in a structured manner.
+      <p>I chose to use freeCodeCamp (FCC), an online community for learning web development in a structured manner.</p>
       <p>
-        It uses a project-based learning. During this time, I did multiple projects. Available on CodePen, and GitHub.
+        I really enjoyed building up my web development skills by doing projects, both front-end and fullstack, using HTML, CSS, Javascript, node.js.
       </p>
-      <p>
-        I obtained a Front-End certification (link). I also did the fullstack projects</p>
-      </p>
+      
+      You can find details on my profile links for:
+      <ul className='list-disc [&>li]:ml-4'>
+        <li><Link to='https://www.freecodecamp.org/manu-4216' external>freeCodeCamp.org</Link> - this is where the certifications are listed</li>
+        <li><Link to='https://codepen.io/manu4216' external>CodePen</Link> - this is where I created the initial projects</li>
+        <li><Link to='https://github.com/manu-4216' external>GitHub</Link> - used for fullstack projects</li>
+      </ul>
+
+      <div className='mt-4'>
+        Direct links to certifications earned:
+      </div>
+      <ul className='list-disc [&>li]:ml-4'>
+        <li><Link to='https://www.freecodecamp.org/certification/manu-4216/legacy-front-end'>Front-End</Link></li>
+        <li><Link to='https://www.freecodecamp.org/certification/manu-4216/javascript-algorithms-and-data-structures'>JavaScript algorithms and data structures</Link></li>
+      </ul>
     </>    
   )
 }

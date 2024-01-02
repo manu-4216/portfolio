@@ -39,9 +39,9 @@ const PinDetails = (props: Props) => {
   if (Component) {
     return (
       <>
-        <div className='text-left'>
+        <div className='text-left mb-3 mt-3'>
           <Component step={step} />
-          {step.tags && <Tags tags={step.tags} />}
+          {step.tags && <Tags className='mt-3' tags={step.tags} />}
         </div>
       </>
     )

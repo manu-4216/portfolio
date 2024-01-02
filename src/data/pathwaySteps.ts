@@ -14,7 +14,6 @@ export type Step = {
   featured?: boolean
   tags?: string[]
   date?: string
-  content?: string
 }
 
 const steps: Step[] = [
@@ -25,18 +24,22 @@ const steps: Step[] = [
   },
   {
     id: 'high-school',
-    shortTitle: 'Basics',
-    longTitle: 'High School',
+    shortTitle: 'CS First contact',
+    longTitle: 'CS First contact in High School',
     type: 'learning',
     tags: ['Pascal', 'algorithms', 'data structures'],
     date: '2003 - 2007',
+    org: {
+      name: 'CN Mesota',
+      location: 'Brasov, Romania',
+    },
   },
   {
     id: 'masters',
     shortTitle: 'Master\'s Degree',
-    longTitle: 'Master\'s Degree in Chemical Engineering',
+    longTitle: 'Master\'s Degree and CS attraction',
     type: 'learning',
-    tags: ['MATLAB', 'chemistry'],
+    tags: ['MATLAB', 'chemistry', 'programming'],
     date: '2007 - 2013',
     org: {
       name: 'CPE Lyon',
@@ -45,8 +48,8 @@ const steps: Step[] = [
   },
   {
     id: 'mainframe',
-    shortTitle: 'Mainframe developer',
-    longTitle: 'Mainframe Software developer',
+    shortTitle: 'Mainframe',
+    longTitle: 'Mainframe developer',
     type: 'experience',
     tags: ['mainframe', 'Cobol', 'SQL'],
     date: '01/2014 - 06/2016',
@@ -57,10 +60,10 @@ const steps: Step[] = [
   },
   {
     id: 'fcc',
-    shortTitle: 'Front-End transition with FreeCodeCamp',
-    longTitle: 'Front-End developer Certification',
+    shortTitle: 'Front-End transition',
+    longTitle: 'Front-End developer training',
     type: 'learning',
-    tags: ['JavaScript', 'React'],
+    tags: ['JavaScript', 'React', 'node', 'CSS', 'HTML'],
     date: '2016',
     org: {
       name: 'freeCodeCamp',
@@ -70,11 +73,10 @@ const steps: Step[] = [
   },
   {
     id: 'dassault',
-    shortTitle: 'Front-end developer',
+    shortTitle: 'Front-end',
     longTitle: 'Front-end developer',
     type: 'experience',
-    content: '',
-    tags: ['JavaScript', 'Backbone'],
+    tags: ['JavaScript', 'Jasmine', 'Backbone', 'Docker'], 
     date: '12/2016 - 10/2018',
     org: {
       name: 'Dassault Systèmes',
@@ -84,12 +86,10 @@ const steps: Step[] = [
   },
   {
     id: 'yoti-fe',
-    shortTitle: 'Front-end developer',
+    shortTitle: 'Front-end',
     longTitle: 'Front-end developer',
     type: 'experience',
-    content: '2018, etc',
-    tags: ['React', 'senior'],
-    date: '11/2018 - 04/2021, 04/2021 - 08/2021',
+    date: '11/2018 - 08/2021',
     org: {
       name: 'Yoti',
       location: 'London, UK',
@@ -98,10 +98,9 @@ const steps: Step[] = [
   },
   {
     id: 'learn-basics',
-    shortTitle: 'Learn fundamentals',
+    shortTitle: 'Self study',
     type: 'learning',
-    content: 'What I learned: REST, HTTP, network, missing semester, CS50, Books (clean code, etc)',
-    tags: ['bash', 'C', 'algorithms'],
+    tags: ['network', 'REST'],
     date: '2019-2022',
     org: {
       location: 'online',
@@ -109,10 +108,10 @@ const steps: Step[] = [
   },
   {
     id: 'yoti-fs',
-    shortTitle: 'Full-stack developer',
+    shortTitle: 'Full-stack',
+    longTitle: 'Full-stack developer',
     type: 'experience',
-    content: 'I moved to a different team, got into full stack',
-    tags: ['node.js', 'express', 'TypeScript'],
+    tags: ['React', 'node.js', 'express', 'TypeScript'],
     date: '08/2021 - 04/2023',
     org: {
       name: 'Yoti',
@@ -122,9 +121,10 @@ const steps: Step[] = [
   },
   {
     id: 'kynd',
-    shortTitle: 'Full-stack developer',
+    shortTitle: 'Full-stack',
+    longTitle: 'Full-stack developer',
     type: 'experience',
-    tags: ['AWS lambda', 'Cypress', 'Postman'],
+    tags: ['React', 'TypeScript', 'AWS lambda', 'testing', 'MongoDB'],
     date: '05/2023 - present',
     org: {
       name: 'KYND',
