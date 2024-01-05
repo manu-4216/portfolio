@@ -8,12 +8,15 @@ import Pathway from '@/components/ui/pathway/pathway'
 ---
 
 <Layout title="Manuel Micu portfolio website">
-  <div class="px-8">
+  <div class="">
     <main>
       <Header client:load={true} />
       <Separator className='my-2' />
-      <Pathway client:only />
-      <!-- <Projects /> -->
+      <div class='px-10'>
+        <Pathway client:only />
+        <!-- <Projects /> -->
+
+      </div>
     </main>
   </div>
 </Layout>

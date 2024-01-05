@@ -1,5 +1,5 @@
 type StepType = 'start' | 'learning' | 'experience'
-type StepId = 'about' | 'high-school' | 'masters' | 'mainframe' | 'fcc' | 'dassault' | 'yoti-fe' | 'yoti-fs' | 'kynd' | 'learn-basics'
+type StepId = 'about' | 'high-school' | 'masters' | 'mainframe' | 'fcc' | 'dassault' | 'yoti-fe' | 'yoti-fs' | 'kynd' | 'learn-basics' | 'next'
 export type Step = {
   id: StepId
   shortTitle: string
@@ -48,7 +48,7 @@ const steps: Step[] = [
   },
   {
     id: 'mainframe',
-    shortTitle: 'Mainframe',
+    shortTitle: 'Mainframe dev',
     longTitle: 'Mainframe developer',
     type: 'experience',
     tags: ['mainframe', 'Cobol', 'SQL'],
@@ -124,13 +124,20 @@ const steps: Step[] = [
     shortTitle: 'Full-stack',
     longTitle: 'Full-stack developer',
     type: 'experience',
-    tags: ['React', 'TypeScript', 'AWS lambda', 'testing', 'MongoDB'],
+    tags: ['React', 'TypeScript', 'AWS lambda', 'MongoDB'],
     date: '05/2023 - present',
     org: {
       name: 'KYND',
       location: 'London, UK',
       website: 'https://www.kynd.io',
     },
+  },
+  {
+    id: 'next',
+    shortTitle: 'What\'s next',
+    longTitle: 'Get in touch',
+    type: 'start',
+    date: 'future',
   },
 ]
 

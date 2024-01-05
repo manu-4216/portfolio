@@ -13,6 +13,7 @@ import { Separator } from '@/components/ui/separator'
 import PinDetails from '@/components/ui/pathway/details/pinDetails'
 import { Building, Link } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
+import { cn } from '@/components/utils'
 
 const transitionViewIfSupported = (updateCb: Function) => {
   // @ts-expect-error
@@ -44,15 +45,16 @@ const PinContent = (props: Props) => {
       setOpen(false)
     })
   }
+  const textSizeClass = type === 'start' ? 'text-sm' : 'text-xs'
 
   return (
     <AlertDialog open={open} onOpenChange={setOpen}>
       <AlertDialogTrigger asChild>
         <div onClick={() => openDialog}>
-          <div className='text-xs font-bold'>
+          <div className={`${textSizeClass} font-bold`}>
             {shortTitle}
           </div>
-          <div className='text-xs text-slate-200'>
+          <div className={`text-xs text-slate-200`}>
             {org?.name}
           </div>
         </div>
@@ -88,13 +90,13 @@ const PinContent = (props: Props) => {
           <Separator className='my-2' />
         </AlertDialogHeader>
 
-        <div className='max-h-[calc(100vh-320px)] overflow-y-scroll'>
+        <div className='max-h-[calc(100vh-250px)] overflow-y-scroll'>
           <PinDetails step={step}>
           </PinDetails>
         </div>
 
         <AlertDialogFooter className='shadow-top pt-4'>
-          <div onClick={() => setOpen(false)} className=''>
+          <div onClick={() => setOpen(false)} className='ml-auto'>
             <Button size="sm" variant='ghost'>Ok, close</Button>
           </div>
         </AlertDialogFooter>

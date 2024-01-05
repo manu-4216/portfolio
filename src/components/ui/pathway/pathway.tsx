@@ -16,7 +16,7 @@ const getPinCoordinates = (numberOfComponents: number = 0, pathWidth: number): C
   }
   const pathProperties = new svgPathProperties(path.getAttribute('d')!)
   const pathLength = pathProperties.getTotalLength()
-  const interval = pathLength * 0.95 / (numberOfComponents - 1)
+  const interval = pathLength * 0.99 / (numberOfComponents - 1)
   const points = []
 
   for (let i = 0; i <= numberOfComponents - 1; i++) {

@@ -8,13 +8,13 @@ const HighSchoolDetails = (props: Props) => {
   return (
     <> 
       <p>
-        My first contact with Computer Sciences was in high school, which was Specialized in Mathematics & Informatics. 
+        My first contact with Computer Sciences was in high school, which was specialized in Mathematics & Informatics. 
       </p>
       <p>
-        During 4 years I learned and used basic concepts: data structures, algorithms, recursion.
+        During 4 years I learned and used basic concepts, such as: data structures, algorithms, recursion.
       </p>
       <p>
-        Other notable achievement: national olympiad distinction in Chemistry.
+        Other notable achievement: National Olympiad distinction in Chemistry.
       </p>
     </>    
   )

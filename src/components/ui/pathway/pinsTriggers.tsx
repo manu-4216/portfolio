@@ -27,13 +27,13 @@ const Pins = (props: Props) => {
         const { type } = step
         let bgClass
         if (type === 'start') {
-          bgClass = 'border-red-400 text-red-200'
+          bgClass = 'border-red-400 text-red-300 border-2'
         }
         if (type === 'learning') {
-          bgClass = 'border-green-600 text-green-100'
+          bgClass = 'border-green-600 text-green-100 border'
         }
         if (type === 'experience') {
-          bgClass = 'border-blue-500 text-blue-100'
+          bgClass = 'border-blue-500 text-blue-100 border'
         }
         
         return (
@@ -44,7 +44,7 @@ const Pins = (props: Props) => {
                   <TooltipTrigger className='h-0 w-0'></TooltipTrigger>
                   <TooltipContent 
                     avoidCollisions={false}
-                    className={`${bgClass} bg-slate-900/95 border cursor-pointer transition-all max-w-32 px-2 py-1 rounded-sm`}
+                    className={`${bgClass} bg-slate-900/95 cursor-pointer transition-all max-w-32 px-2 py-1 rounded-sm`}
                   >
                     <PinAlertContent step={step} />
                     <TooltipArrow className='' width={13} height={8} />

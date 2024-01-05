@@ -13,10 +13,10 @@ const FccDetails = (props: Props) => {
         I really enjoyed building up my web development skills by doing projects, both front-end and fullstack, using HTML, CSS, Javascript, node.js.
       </p>
       
-      You can find details on my profile links for:
+      You can find details on the following links:
       <ul className='list-disc [&>li]:ml-4'>
-        <li><Link to='https://www.freecodecamp.org/manu-4216' external>freeCodeCamp.org</Link> - this is where the certifications are listed</li>
-        <li><Link to='https://codepen.io/manu4216' external>CodePen</Link> - this is where I created the initial projects</li>
+        <li><Link to='https://www.freecodecamp.org/manu-4216' external>freeCodeCamp.org</Link> - my FCC profile (certifications, projects)</li>
+        <li><Link to='https://codepen.io/manu4216' external>CodePen</Link> - platform used for my initial projects</li>
         <li><Link to='https://github.com/manu-4216' external>GitHub</Link> - used for fullstack projects</li>
       </ul>
 
