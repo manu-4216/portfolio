@@ -1,21 +1,19 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import '@/styles/globals.css';
-import Header from "@/components/ui/header"
-import Projects from "@/components/ui/projects"
-import { Separator } from '@/components/ui/separator'
+import Layout from '../layouts/Layout.astro'
+import '@/styles/globals.css'
+import Header from '@/components/ui/header'
+import Projects from '@/components/ui/projects'
 import Pathway from '@/components/ui/pathway/pathway'
 ---
 
-<Layout title="Manuel Micu portfolio website">
-  <div class="">
+<Layout title='Manuel Micu portfolio website'>
+  <div>
     <main>
       <Header client:load={true} />
-      <Separator className='my-2' />
+      <div class='h-[2px] bg-slate-700/15 shadow-sm'></div>
       <div class='mx-14'>
-        <Pathway client:only />
-        <!-- <Projects /> -->
-
+        <Pathway client:load={true}/>
+        <Projects />
       </div>
     </main>
   </div>

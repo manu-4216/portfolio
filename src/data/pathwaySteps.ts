@@ -137,7 +137,6 @@ const steps: Step[] = [
     shortTitle: 'What\'s next',
     longTitle: 'Get in touch',
     type: 'start',
-    date: 'future',
   },
 ]
 

@@ -25,8 +25,8 @@ const Link = (props: any) => {
 
 const Header = () => {
   return (
-    <header className='pb-4 px-8'>
-      <div className='flex items-center flex-wrap my-4 flex-row gap-2'>
+    <header className='p-6'>
+      <div className='flex items-center flex-wrap flex-row gap-2'>
         <div className="w-[calc(50%-2rem)] min-w-[280px]">
           <div className='text-2xl leading-none mb-2'>
             Manuel Micu
@@ -44,7 +44,7 @@ const Header = () => {
           <AvatarImage src="https://github.com/manu-4216.png" />
           <AvatarFallback>MM</AvatarFallback>
         </Avatar>
-        <div className="text-right grow text-sm">
+        <div className='text-left sm:text-right grow text-sm'>
           <div className='font-semibold mb-2'>
             {location}
           </div>
