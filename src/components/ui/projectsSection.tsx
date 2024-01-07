@@ -13,7 +13,7 @@ import Tags from './tags'
 import ProjectsList from './projectsList'
 import { Button } from './button'
 
-const projectsInReverseOrder = projects.toReversed()
+const projectsInReverseOrder = [...projects].reverse()
 const featuredProjects = projectsInReverseOrder.filter(i => Boolean(i.featured))
 const extraProjects = projectsInReverseOrder.filter(i => !Boolean(i.featured))
 

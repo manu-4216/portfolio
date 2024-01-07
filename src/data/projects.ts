@@ -183,6 +183,17 @@ const projects: Project[] = [
     },
     featured: true,
   },
+  {
+    id: 'portfolio',
+    title: 'Portfolio website',
+    description: 'My portfolio website that you see here. More content will be added shortly.',
+    tags: ['Astro', 'React', 'Tailwind', 'SVG'],
+    links: {
+      code: 'https://github.com/manu-4216/portfolio',
+      live: 'https://manu-4216.github.io/portfolio/',
+    },
+    featured: true,
+  }
 ]
 
 export default projects
