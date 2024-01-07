@@ -1,4 +1,16 @@
-const projects = [
+export type Project = {
+  id: string
+  title: string
+  description: string
+  tags: string[]
+  links: {
+    live?: string,
+    code?: string
+  }
+  featured?: boolean
+}
+
+const projects: Project[] = [
   {
     id: 'sudoku',
     title: 'Sudoku solver',
@@ -30,7 +42,8 @@ const projects = [
     tags: ['Android', 'game', 'Processing'],
     links: {
       live: 'https://play.google.com/store/apps/details?id=processing.test.redsq',
-    }
+    },
+    featured: true,
   },
   {
     id: 'atelier-codage',
@@ -40,7 +53,8 @@ const projects = [
     links: {
       code: 'https://scratch.mit.edu/studios/1729506/',
       live: 'https://atelier-codage.wixsite.com/atelier-codage/presentation'
-    }
+    },
+    featured: true,
   },
   {
     id: 'simon',
@@ -48,7 +62,8 @@ const projects = [
     description: 'One of my first FCC projects, CSS-focused',
     tags: ['HTML', 'CSS'],
     links: {
-      live: 'https://codepen.io/manu4216/pen/rLdNqx',
+      code: 'https://codepen.io/manu4216/pen/rLdNqx',
+      live: 'https://codepen.io/manu4216/full/rLdNqx',
     }
   },
   {
@@ -57,7 +72,8 @@ const projects = [
     description: 'Advanced yet simple JavaScript calculator, capable of performing many Mathematical operations.',
     tags: ['CSS', 'JavaScript'],
     links: {
-      live: 'https://codepen.io/manu4216/pen/KMzKNg',
+      code: 'https://codepen.io/manu4216/pen/KMzKNg',
+      live: 'https://codepen.io/manu4216/full/KMzKNg',
     }
   },
   {
@@ -77,7 +93,8 @@ const projects = [
     tags: ['AWS lambda', 'serverless', 'nodemailer'],
     links: {
       code: 'https://github.com/manu-4216/secret-santa',
-    }
+    },
+    featured: true,
   },
   {
     id: 'voting',
@@ -137,13 +154,24 @@ const projects = [
     }
   },
   {
+    id: 'routes-viz',
+    title: 'React routes visualization',
+    description: 'Side project created at work, useful for visualizing React Router routes graph',
+    tags: ['React', 'Router', 'graph'],
+    links: {
+      live: 'https://dev.to/manu4216/visualization-of-route-navigation-in-a-react-app-35lg',
+    },
+    featured: true,
+  },
+  {
     id: 'kyc-yoti',
     title: 'Identity verification product',
-    description: 'Web SDK while at Yoti which does KYC verification. I grew alongside this React SPA project while at Yoti. More interesting details in the Yoti experience section.',
+    description: 'Web SDK while at Yoti which does KYC verification. I grew alongside this React project. I built an Express mock server, and session manager as auxiliary tools. More interesting details in the Yoti experience section.',
     tags: ['React', 'state management'],
     links: {
       live: 'https://yoti.world/yoti-idv/idv',
-    }
+    },
+    featured: true,
   },
   {
     id: 'face-capture',
@@ -152,7 +180,8 @@ const projects = [
     tags: ['React', 'library', 'camera'],
     links: {
       live: 'https://www.npmjs.com/package/@getyoti/react-face-capture',
-    }
+    },
+    featured: true,
   },
 ]
 

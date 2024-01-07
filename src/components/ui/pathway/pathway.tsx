@@ -57,9 +57,9 @@ const Pathway = () => {
 
   return (
     <section id='journey'>
-      <h2 className='text-xl mb-2 mt-4'>My Journey</h2>
+      <h2 className='text-lg mb-2 mt-4 font-semibold'>My Journey</h2>
       <div className='w-full flex justify-center'>
-        <div className='relative mt-14 w-full max-w-[35rem] w-[calc(100vw-7rem)] translate-z-0'>
+        <div className='relative mt-14 max-w-[35rem] w-[calc(100vw-7rem)] translate-z-0'>
           <svg xmlns="http://www.w3.org/2000/svg"
             ref={svgRef}
             viewBox="0 0 500 500"

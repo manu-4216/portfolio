@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro'
 import '@/styles/globals.css'
 import Header from '@/components/ui/header'
-import Projects from '@/components/ui/projects'
+import Projects from '@/components/ui/projectsSection'
 import Pathway from '@/components/ui/pathway/pathway'
 ---
 
@@ -11,9 +11,9 @@ import Pathway from '@/components/ui/pathway/pathway'
     <main>
       <Header client:load={true} />
       <div class='h-[2px] bg-slate-700/15 shadow-sm'></div>
-      <div class='mx-14'>
-        <Pathway client:load={true}/>
-        <Projects />
+      <div class='mx-6 pb-6'>
+        <Pathway client:load={true} />
+        <Projects client:load={true} />
       </div>
     </main>
   </div>

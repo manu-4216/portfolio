@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { type Step } from '@/data/pathwaySteps'
 import {
   AlertDialog,
@@ -11,39 +11,27 @@ import {
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import PinDetails from '@/components/ui/pathway/details/pinDetails'
-import { Building, Link } from 'lucide-react'
+import { Building, Link, Star, HelpCircle, Check } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
-import { cn } from '@/components/utils'
-
-const transitionViewIfSupported = (updateCb: Function) => {
-  // @ts-expect-error
-  if (document.startViewTransition) {
-    // @ts-expect-error
-    document.startViewTransition(updateCb);
-  } else {
-    updateCb();
-  }
-}
+import Entity from './entity'
 
 type Props = {
   step: Step
 }
 const PinContent = (props: Props) => {
   const { step } = props
-  const { id, shortTitle, tags, type, featured, longTitle, date, org } = step
-  const [open, setOpen] = React.useState(false);
+  const { id, shortTitle, type, featured, longTitle, date, org } = step
+  const [open, setOpen] = useState(false)
+  // const [seen, setSeen] = useState(false)
   const title = longTitle || shortTitle
 
   const openDialog = () => {
-    transitionViewIfSupported(() => {
-      setOpen(true)
-    })
+    setOpen(true)
+    // setSeen(true)
   }
 
   const closeDialog = () => {
-    transitionViewIfSupported(() => {
-      setOpen(false)
-    })
+    setOpen(false)
   }
   const textSizeClass = type === 'start' ? 'text-sm' : 'text-xs'
 
@@ -54,9 +42,7 @@ const PinContent = (props: Props) => {
           <div className={`${textSizeClass} font-bold`}>
             {shortTitle}
           </div>
-          <div className={`text-xs text-slate-200`}>
-            {org?.name}
-          </div>
+          <Entity type={type} org={org} />
         </div>
       </AlertDialogTrigger>
       <AlertDialogContent className='gap-0' handleOverlayClick={() => closeDialog()}>

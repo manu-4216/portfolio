@@ -44,7 +44,7 @@ const Pins = (props: Props) => {
                   <TooltipTrigger className='h-0 w-0'></TooltipTrigger>
                   <TooltipContent 
                     avoidCollisions={false}
-                    className={`${bgClass} bg-[#231438ed] cursor-pointer transition-all max-w-32 px-2 py-1 rounded-sm`}
+                    className={`${bgClass} bg-[#231438ed] cursor-pointer transition-all max-w-36 px-2 py-1 rounded-sm`}
                   >
                     <PinAlertContent step={step} />
                     <TooltipArrow className='' width={13} height={8} />

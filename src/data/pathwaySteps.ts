@@ -90,6 +90,7 @@ const steps: Step[] = [
     longTitle: 'Front-end developer',
     type: 'experience',
     date: '11/2018 - 08/2021',
+    featured: true,
     org: {
       name: 'Yoti',
       location: 'London, UK',
