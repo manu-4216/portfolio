@@ -32,11 +32,16 @@ const Header = () => {
             Manuel Micu
           </div>
           <div className='bold text-sm text-slate-900 leading-1'>
-            <Badge className='rounded-sm mb-1'>Senior Front-end</Badge> | {' '}
-            <Badge className='rounded-sm'>Full-stack</Badge>
+            <Tags tags={['Senior Front-end']} /> 
+            {' | '}
+            <Tags tags={['Full-stack']} />
           </div>
           <div className='text-sm text-slate-800'>
-            Software developer with frontend expertise in: <Tags variant='outline' tags={['React', 'TypeScript', 'node.js']} />
+            Software developer with frontend expertise 
+            <Tags 
+              variant='outline'
+              tags={['React', 'TypeScript', 'node.js', 'testing', 'collaboration']}
+            />
           </div>
         </div>
 

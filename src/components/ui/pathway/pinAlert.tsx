@@ -10,6 +10,7 @@ import {
 } from '@/components/ui/alert-dialog'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
+import Tags from '@/components/ui/tags'
 import PinDetails from '@/components/ui/pathway/details/pinDetails'
 import { Building, Link, Star, HelpCircle, Check } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
@@ -67,9 +68,7 @@ const PinContent = (props: Props) => {
                   <Badge className='rounded-sm text-nowrap' variant='destructive'>{date}</Badge>
               )}
               {org?.location &&
-                <Badge className='rounded-sm w-fit'>
-                  {org?.location}
-                </Badge>
+                <Tags tags={[org?.location]}/>
               }
             </div>
           </AlertDialogTitle>

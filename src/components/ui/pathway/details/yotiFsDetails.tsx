@@ -36,6 +36,7 @@ const MainframeDetails = (props: Props) => {
         <div className='ml-1 border-l border-blue-600 ps-2'>
           <ul className='list-disc [&>li]:ml-4'>
             <li>RESTful API: added new endpoints, tested using unit or contract-based tests (<em>Jest, Sinon, Mocha</em>), wrote OpenAPI schemas.</li>
+            <li>Auth: contributed to updating the auth method, to a JWT-based one</li>
             <li>DBs: write+test migration files, write DB queries (using raw SQL, knex query builder, and Sequelize Sequelize).</li>
             <li>Other tools used: docker, kubernetes, monorepo, Remix.</li>
             <li>Tech & organisational discussions: library choices, conventions (naming, patterns), process improvements (moving from Scrum to Kanban, PR review processes).</li>

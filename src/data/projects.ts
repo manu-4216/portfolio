@@ -4,8 +4,9 @@ export type Project = {
   description: string
   tags: string[]
   links: {
-    live?: string,
+    live?: string
     code?: string
+    blog?: string
   }
   featured?: boolean
 }
@@ -14,7 +15,7 @@ const projects: Project[] = [
   {
     id: 'sudoku',
     title: 'Sudoku solver',
-    description: 'Project during my education, for which I went into depth, to solve Sudoku of any complexity level.',
+    description: 'Project during my Bachelor\'s studies, for which I went into depth, to solve Sudoku of any complexity level.',
     tags: ['algorithms'],
     links: {
     }
@@ -108,7 +109,7 @@ const projects: Project[] = [
   {
     id: 'kibo',
     title: 'Touch Keyboard concept',
-    description: 'Fullstack app, with protected routes, Passport.js auth. Data stored in MongoDb Atlas.',
+    description: 'Side project to explore a touch friendly keyboard, built with React.',
     tags: ['React', 'JavaScript'],
     links: {
       code: 'https://github.com/manu-4216/kibo-keyboard',
@@ -156,30 +157,10 @@ const projects: Project[] = [
   {
     id: 'routes-viz',
     title: 'React routes visualization',
-    description: 'Side project created at work, useful for visualizing React Router routes graph',
+    description: 'Side project created at work, useful for visualizing React Router routes graph.',
     tags: ['React', 'Router', 'graph'],
     links: {
-      live: 'https://dev.to/manu4216/visualization-of-route-navigation-in-a-react-app-35lg',
-    },
-    featured: true,
-  },
-  {
-    id: 'kyc-yoti',
-    title: 'Identity verification product',
-    description: 'Web SDK while at Yoti which does KYC verification. I grew alongside this React project. I built an Express mock server, and session manager as auxiliary tools. More interesting details in the Yoti experience section.',
-    tags: ['React', 'state management'],
-    links: {
-      live: 'https://yoti.world/yoti-idv/idv',
-    },
-    featured: true,
-  },
-  {
-    id: 'face-capture',
-    title: 'Face capture library',
-    description: 'Work project for which I was the main contributor for a while. Code written after reading Clean Code book. So the code writing style was positively influenced by this book.',
-    tags: ['React', 'library', 'camera'],
-    links: {
-      live: 'https://www.npmjs.com/package/@getyoti/react-face-capture',
+      blog: 'https://dev.to/manu4216/visualization-of-route-navigation-in-a-react-app-35lg',
     },
     featured: true,
   },
@@ -193,7 +174,27 @@ const projects: Project[] = [
       live: 'https://manu-4216.github.io/portfolio/',
     },
     featured: true,
-  }
+  },
+  {
+    id: 'face-capture',
+    title: 'Face capture library',
+    description: 'Work project for which I was the main for a while. Code written after reading Clean Code book. So the code writing style was positively influenced by this book.',
+    tags: ['React', 'library', 'camera'],
+    links: {
+      live: 'https://www.npmjs.com/package/@getyoti/react-face-capture',
+    },
+    featured: true,
+  },
+  {
+    id: 'kyc-yoti',
+    title: 'Identity verification product',
+    description: 'Web SDK while at Yoti which does KYC verification. I grew alongside this React project. I built an Express mock server, and session manager as auxiliary tools. More interesting details in the Yoti experience section.',
+    tags: ['React', 'state management'],
+    links: {
+      live: 'https://yoti.world/yoti-idv/idv',
+    },
+    featured: true,
+  },
 ]
 
 export default projects

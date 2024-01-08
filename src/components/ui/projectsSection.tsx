@@ -30,7 +30,7 @@ const Projects = (props: any) => {
 
       <ProjectsList projects={featuredProjects} />
       
-      <Button onClick={toggleExtra} className='my-4'>
+      <Button onClick={toggleExtra} className='my-4 bg-[#231438ed]'>
         {showExtra ?  'Hide extra projects' : 'Show more projects'}
       </Button>
       

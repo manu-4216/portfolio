@@ -59,7 +59,7 @@ const YotiDetails = (props: Props) => {
               </details>
 
               <p>
-                Tools used: <Tags tags={['React', 'express','Storybook', 'CSS modules', 'SCSS']} />
+                Tools used: <Tags tags={['React', 'express','Storybook', 'CSS modules', 'SCSS', 'webpack', 'vite']} />
               </p>
             </div>
           )
