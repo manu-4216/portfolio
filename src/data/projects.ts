@@ -178,7 +178,7 @@ const projects: Project[] = [
   {
     id: 'face-capture',
     title: 'Face capture library',
-    description: 'Work project for which I was the main for a while. Code written after reading Clean Code book. So the code writing style was positively influenced by this book.',
+    description: 'Work project for which I was the main contributor for a while. Code written after reading Clean Code book. So the code writing style was positively influenced by this book.',
     tags: ['React', 'library', 'camera'],
     links: {
       live: 'https://www.npmjs.com/package/@getyoti/react-face-capture',
