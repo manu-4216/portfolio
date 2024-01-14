@@ -2,7 +2,7 @@ import React from 'react'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import aboutMe from '@/data/aboutMe'
 import Tags from '@/components/ui/tags'
-import { cn } from '../../utils'
+import { cn } from '../utils'
 import HeaderLink from './Link'
 
 const { location, links} = aboutMe

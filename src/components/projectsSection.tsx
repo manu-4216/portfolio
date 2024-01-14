@@ -9,9 +9,9 @@ import {
   CardTitle,
 } from '@/components/ui/card'
 import Link from '@/components/ui/link'
-import Tags from './tags'
-import ProjectsList from './projectsList'
-import { Button } from './button'
+import Tags from './ui/tags'
+import ProjectsList from './ui/projectsList'
+import { Button } from './ui/button'
 
 const projectsInReverseOrder = [...projects].reverse()
 const featuredProjects = projectsInReverseOrder.filter(i => Boolean(i.featured))
