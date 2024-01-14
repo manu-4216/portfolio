@@ -1,7 +1,7 @@
 import React from 'react'
 import { type Step } from '@/data/pathwaySteps'
-import Link from '../../link'
-import { Button } from '../../button'
+import Link from '@/components/ui/link'
+import { Button } from '@/components/ui/button'
 
 type Props = {
   step: Step

@@ -1,17 +1,8 @@
 import React, { useState } from 'react'
 import projects from '@/data/projects'
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
-import Link from '@/components/ui/link'
-import Tags from './ui/tags'
-import ProjectsList from './ui/projectsList'
-import { Button } from './ui/button'
+import MainProjectsList from './mainProjectsList'
+import SecondaryProjectsList from './secondaryProjectsList'
+import { Button } from '@/components/ui/button'
 
 const projectsInReverseOrder = [...projects].reverse()
 const featuredProjects = projectsInReverseOrder.filter(i => Boolean(i.featured))
@@ -28,13 +19,18 @@ const Projects = (props: any) => {
     <section id='projects'>
       <h2 className='text-lg my-4 font-semibold'>My Projects</h2>
 
-      <ProjectsList projects={featuredProjects} />
+      <MainProjectsList projects={featuredProjects} />
       
       <Button onClick={toggleExtra} className='my-4 bg-[#231438ed]'>
         {showExtra ?  'Hide extra projects' : 'Show more projects'}
       </Button>
       
-      {showExtra && <ProjectsList projects={extraProjects} />}
+      {showExtra && (
+        <div className='mx-12 max-w-full mb-12'>
+          <SecondaryProjectsList projects={extraProjects} />
+        </div>
+        )
+      }
     </section>
   )
 }

@@ -8,6 +8,7 @@ export type Project = {
     code?: string
     blog?: string
   }
+  assets?: string[]
   featured?: boolean
 }
 
@@ -44,17 +45,19 @@ const projects: Project[] = [
     links: {
       live: 'https://play.google.com/store/apps/details?id=processing.test.redsq',
     },
+    assets: ['android-game.png'],
     featured: true,
   },
   {
     id: 'atelier-codage',
     title: 'Coding Atelier',
-    description: 'Initiative during which I taught young children how to code, using simple tools (Scratch, Wix, MIT App Inventor). I had created a complete lesson plan, fun projects (see links), and a cool website.',
+    description: 'Entrepreneurial initiative during which I taught young children how to code, using simple tools (Scratch, Wix, MIT App Inventor). I had created a complete lesson plan, fun projects (see links), and a website.',
     tags: ['website', 'Scratch'],
     links: {
       code: 'https://scratch.mit.edu/studios/1729506/',
       live: 'https://atelier-codage.wixsite.com/atelier-codage/presentation'
     },
+    assets: ['atelier.png'],
     featured: true,
   },
   {
@@ -95,6 +98,7 @@ const projects: Project[] = [
     links: {
       code: 'https://github.com/manu-4216/secret-santa',
     },
+    assets: ['secret-santa.png'],
     featured: true,
   },
   {
@@ -157,42 +161,46 @@ const projects: Project[] = [
   {
     id: 'routes-viz',
     title: 'React routes visualization',
-    description: 'Side project created at work, useful for visualizing React Router routes graph.',
+    description: 'Side project created at work, useful for visualizing React Router routes graph of possible navigation pathways. Link to the blog I wrote below.',
     tags: ['React', 'Router', 'graph'],
     links: {
       blog: 'https://dev.to/manu4216/visualization-of-route-navigation-in-a-react-app-35lg',
     },
+    assets: ['routes-viz.png'],
     featured: true,
   },
   {
     id: 'portfolio',
     title: 'Portfolio website',
-    description: 'My portfolio website that you see here. More content will be added shortly.',
-    tags: ['Astro', 'React', 'Tailwind', 'SVG'],
+    description: 'My portfolio website that you see here. Also used to try out new things.',
+    tags: ['Astro', 'React', 'Tailwind', 'shadcn/ui'],
     links: {
       code: 'https://github.com/manu-4216/portfolio',
       live: 'https://manu-4216.github.io/portfolio/',
     },
+    assets: ['portfolio.png'],
     featured: true,
   },
   {
     id: 'face-capture',
     title: 'Face capture library',
-    description: 'Work project for which I was the main contributor for a while. Code written after reading Clean Code book. So the code writing style was positively influenced by this book.',
+    description: 'Work project, available on npm, for which I was the main contributor for a few months in the beginning. Code written after reading Clean Code book. So the code is influenced by it.',
     tags: ['React', 'library', 'camera'],
     links: {
       live: 'https://www.npmjs.com/package/@getyoti/react-face-capture',
     },
+    assets: ['fcm.png'],
     featured: true,
   },
   {
     id: 'kyc-yoti',
     title: 'Identity verification product',
-    description: 'Web SDK while at Yoti which does KYC verification. I grew alongside this React project. I built an Express mock server, and session manager as auxiliary tools. More interesting details in the Yoti experience section.',
+    description: 'Web SDK for KYC. I worked on it since greenfield, for around 1.5 years. I also built some useful auxiliary tools for it. More details in the Yoti experience section.',
     tags: ['React', 'state management'],
     links: {
       live: 'https://yoti.world/yoti-idv/idv',
     },
+    assets: ['kyc-yoti.png'],
     featured: true,
   },
 ]
