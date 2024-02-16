@@ -8,13 +8,13 @@ const KyndDetails = (props: Props) => {
   return (
     <>  
       <ul className='list-disc [&>li]:ml-4'>
-        <li>Development of front-end features, using React, Redux, Typescript, Styled Components</li>
-        <li>Written serverless AWS lambda functions</li>
-        <li>Contributed to features around a REST API</li>
-        <li>Wrote tests using Cypress, Postman, Jest, Testing Library</li>
+        <li>Coordinated the development of a front-end project. Tech used: React, Redux, TypeScript, Styled Components, Cypress, Jest</li>
+        <li>Migrated a large portion of the app logic to new AWS TypeScript lambdas, which interacts with the REST API, and a Document-based database</li>
+        <li>Wrote code, tests, documentation for the main REST API product (OpenAPI, Express.js, OpenAPI, PostgreSQL, Postman)</li>
       </ul>
     </>    
   )
 }
 
 export default KyndDetails
+
