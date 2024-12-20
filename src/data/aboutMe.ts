@@ -2,7 +2,7 @@ const aboutMe = {
   name: "Manuel Micu",
   shortDescription: "Senior Front-end | Full-stack developer",
   statusPhrase: "Looking for a new exciting opportunity. Well rounded skills, strong contributor, and team player",
-  location: "London | Remote",
+  location: "Bangalore",
   links: {
     portfolio: "https://manu-4216.github.io/portfolio",
     linkedIn: "https://linkedin.com/in/manuel-micu-39826586",
