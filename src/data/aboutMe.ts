@@ -9,7 +9,7 @@ const aboutMe = {
     dev: "https://dev.to/manu4216",
     github: "https://github.com/manu-4216",
     codepen: "https://codepen.io/manu4216",
-    resume: "https://www.dropbox.com/scl/fi/0u5czcg30o5ui1kvie17l/Manuel-s-Resume.pdf?rlkey=rwg7imzq90pp3l3b55l4ugczy&st=tun22r27&dl=1"
+    resume: "https://www.dropbox.com/scl/fi/v6p1wooq1r84gvz7ktsxk/Manuel-s-Resume.pdf?rlkey=xwyuvqalhmsxy53lhat6uqawl&st=3gkjq7x6&dl=1"
   }
 }
 
