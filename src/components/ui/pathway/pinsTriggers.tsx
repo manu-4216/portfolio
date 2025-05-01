@@ -9,7 +9,7 @@ import {
 } from '@/components/ui/tooltip'
 import PinAlertContent from '@/components/ui/pathway/pinAlert'
 
-type Coordinates = { 
+type Coordinates = {
   x: string
   y: string
 }
@@ -35,14 +35,22 @@ const Pins = (props: Props) => {
         if (type === 'experience') {
           bgClass = 'border-blue-500 text-blue-100 border'
         }
-        
+
+        if (x === 0 || y === 0) {
+          return null
+        }
+
         return (
-          <Fragment key={index}>
-            <div key={index} className='absolute' style={{ left: x, top: y }}>
+          <Fragment key={step.id}>
+            <div
+              key={index}
+              className='absolute'
+              style={{ left: x, top: y, transform: 'translateZ(0)' }}
+            >
               <TooltipProvider>
                 <Tooltip open>
                   <TooltipTrigger className='h-0 w-0'></TooltipTrigger>
-                  <TooltipContent 
+                  <TooltipContent
                     avoidCollisions={false}
                     className={`${bgClass} bg-[#231438ed] cursor-pointer transition-all max-w-36 px-2 py-1 rounded-sm`}
                   >

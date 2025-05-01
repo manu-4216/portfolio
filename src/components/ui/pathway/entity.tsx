@@ -1,6 +1,6 @@
 import React from 'react'
 import type { Step } from '@/data/pathwaySteps'
-import { Building } from 'lucide-react'
+import { Building, School } from 'lucide-react'
 import { cn } from '@/components/utils'
 
 type Props = {
@@ -20,10 +20,19 @@ const Entity = (props: Props) => {
     iconClass = 'text-blue-300'
   }
 
+  const InstitutionIcon = type === 'learning' ? School : Building
+
   return (
     <>
-      <div className={cn(`text-xs text-slate-200 flex items-start gap-1`, className)}>
-        {org?.name && <Building size={11} className={`mt-[3px] ${iconClass}`} />}
+      <div
+        className={cn(
+          `text-xs text-slate-200 flex items-start gap-1`,
+          className
+        )}
+      >
+        {org?.name && (
+          <InstitutionIcon size={11} className={`mt-[3px] ${iconClass}`} />
+        )}
         <span>{org?.name}</span>
       </div>
     </>

@@ -10,15 +10,13 @@ const myEmail = `manu4216${'@'}gmail.com`
 
 const NextDetails = (props: Props) => {
   return (
-    <>  
-      <p>
-        Feel free to get in touch about new opportunities.
-      </p>
+    <>
+      <p>Feel free to get in touch about new opportunities.</p>
 
       <p>
         <div>
           <span className='font-sm text-slate-600'>Location preference: </span>
-          <span className='font-medium'>Remote</span>
+          <span className='font-medium'>Remote/Hybrid/Bangalore</span>
         </div>
         <div>
           <span className='font-sm text-slate-600'>Time Zone: </span>
@@ -28,10 +26,12 @@ const NextDetails = (props: Props) => {
 
       <p>
         <Button variant='outline' className='border-slate-800'>
-          <Link to={`mailto:${myEmail}`} className='no-underline'>Email me</Link>
+          <Link to={`mailto:${myEmail}`} className='no-underline'>
+            Email me
+          </Link>
         </Button>
       </p>
-    </>    
+    </>
   )
 }
 
